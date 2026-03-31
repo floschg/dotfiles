@@ -8,12 +8,17 @@ export PAGER="less"
 
 # XDG cleanup
 export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+
 
 # histfile cleanup
 export HISTFILE="/dev/null"
 export LESSHISTFILE="/dev/null"
+
+# path
+export PATH="${PATH}:$HOME/.local/fsbin"
 
 # Auto-start Hyprland on tty1 if not already running
 [ "$(tty)" = "/dev/tty1" ] && ! pgrep -x Hyprland >/dev/null && exec start-hyprland
