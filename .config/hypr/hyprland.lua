@@ -32,7 +32,7 @@ hl.monitor({
 
 local terminal    = "alacritty"
 local fileManager = "thunar"
-local menu        = "wofi --show drun"
+local menu        = "hyprlauncher"
 local browser     = "librewolf"
 
 
