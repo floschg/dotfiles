@@ -12,13 +12,13 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 
-
 # histfile cleanup
 export HISTFILE="/dev/null"
 export LESSHISTFILE="/dev/null"
 
 # path
 export PATH="${PATH}:$HOME/.local/fsbin"
+export PATH="${PATH}:$HOME/dev/fspytools"
 
 # Auto-start Hyprland on tty1 if not already running
 [ "$(tty)" = "/dev/tty1" ] && ! pgrep -x Hyprland >/dev/null && exec start-hyprland
